@@ -10,7 +10,7 @@ body {
 }
 
 .placeholder {
-	width: 60rem;
+	width: 70rem;
 	height: 40rem;
 	background: rgb(139, 120, 216);
 	background: linear-gradient(
@@ -28,21 +28,22 @@ body {
 	background-color: #ffffff;
 }
 .triangle-dark {
-	margin-left: 3rem;
-	width: 3rem;
-	height: 3rem;
+	margin-left: 23rem;
+	width: 2rem;
+	height: 2rem;
 	background-color: #1c1a36;
 	clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
 	transform: rotate(272deg);
+	margin-top: -10rem;
 }
 .box-white {
-	width: 10rem;
-	height: 8rem;
+	height: 50px;
 	background-color: #ffffff;
 	box-shadow: 0px 9px 20px -5px #ffffff;
 	border-radius: 10px;
 	padding: 1rem;
 	flex: 0 50%;
+	margin-right: 2rem;
 }
 .round-photo-1 {
 	width: 20%;
@@ -52,6 +53,26 @@ body {
 	padding: 10px;
 	background-color: lavender;
 	animation: colorChange 5s infinite;
+}
+.round-photo-2 {
+	width: 10%;
+	height: auto;
+	border-radius: 50%;
+	border: 3px solid grey;
+	padding: 10px;
+	background-color: lavender;
+	animation: colorChange 5s infinite;
+}
+.round-photo-4 {
+	width: 10%;
+	height: auto;
+	border-radius: 50%;
+	border: 3px solid grey;
+	padding: 10px;
+	background-color: lavender;
+	animation: colorChange 5s infinite;
+	margin-left: 500px;
+	margin-top: -80px
 }
 
 @keyframes colorChange {
@@ -78,8 +99,7 @@ img {
 }
 
 .box-dark {
-	width: 15rem;
-	height: 10rem;
+	height: 50px;
 	background-color: #1c1a36;
 	box-shadow: 0px 9px 20px -5px #1c1a36;
 	border-radius: 10px;
@@ -104,16 +124,20 @@ img {
 }
 
 .cards-container {
-	display: flex; /* enable flexbox layout */
-	flex-direction: column; /* stack items vertically */
-	align-items: center; /* align items in the center */
-    justify-content: space-between; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+	height: 600px;
 }
 
 .box-white,
 .box-dark {
-	width: 40%; /* set the width of each box to 50% */
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 10rem;
 }
